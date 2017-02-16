@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+key = input('Please input the key'))
+time = 0
+running = True
+
+while running:
+    guess = input('Please input your key'))
+	if guess == key:
+	    time = time + 1
+        print('Congratulation!\nYou win the game!\n The key is %f'%key)
+	    running = False
+	elif guess > key:
+	    time = time + 1
+        print('Sorry.You answer is higher than the key')
+	else:
+	    time = time + 1
+	    print('Sorry.You answer is smaller than the key')
+else:
+    print('Over')    
+    
